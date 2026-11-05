@@ -2,7 +2,19 @@
 
 A clean, responsive login and register page built with plain HTML, CSS, and JavaScript. Switch between Login and Register using folder-style tabs, and land on an animated "coming soon" page after submitting.
 
-This project was built for practice. There is no backend yet, so no real accounts are created.
+> **Demo only: this is not a real login system.**
+> This project is a front-end practice exercise. It has no backend and no database, so nothing is checked, stored, or sent anywhere. **Any email and password (or even empty fields) will "work"**, and no real accounts are created. Please do not enter real credentials.
+
+## Why Any Email and Password Works
+
+Real authentication needs a server to verify credentials against a database. This project is front-end only, so:
+
+- There is no server, database, or API to check the email or password against.
+- The forms simply redirect to `upcoming.html` when submitted, whatever was typed in.
+- Nothing is saved, so "Register" does not create an account and "Login" does not look one up.
+- The "Remember me" checkbox and "forgot password" link are visual only.
+
+The goal of this project is to practise layout, styling, tab switching, and DOM events, not security. A later version will connect to a real backend (see Future Improvements).
 
 ## Features
 
@@ -34,7 +46,7 @@ No installs or build steps are needed.
 ## How It Works
 
 - Clicking the Register or Login tab hides one form and shows the other, and moves the active style and underline to the selected tab.
-- Submitting either form sends the user to `upcoming.html`.
+- Submitting either form sends the user to `upcoming.html` without checking any input (the default form submit is prevented in `login.js` and replaced with a redirect).
 - On `upcoming.html`, JavaScript splits the text into letters and gives each one its own shake timing, which creates the jittery effect.
 
 ## Built With
@@ -56,6 +68,7 @@ No installs or build steps are needed.
 
 ## Notes
 
+- This is a practice project and a demo, not a production login. No credentials are verified or stored.
 - Forms do not validate input yet, so empty fields will still continue to the next page.
 - The forgot password link points to `forgotpassword.html`, which is not included yet.
 
