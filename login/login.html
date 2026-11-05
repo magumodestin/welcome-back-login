@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <div class="TopBtn">
+        <button type="button" id="loginTab" class="active">Login</button>
+        <button type="button" id="registerTab">Register</button>
+      </div>
+
+      <div id="loginForm">
+        <h1>Welcome Back</h1>
+        <p style="margin: 0 0 20px 30px; margin-left: 30px">
+          Login to your account
+        </p>
+
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="youremailhere@gmail.com" />
+
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="********" />
+            <button type="button" id="eyeBtn" class="eye-btn">👁️</button>
+          </div>
+
+          <div class="rememberSection">
+            <label for="remember">
+              <input type="checkbox" id="remember" />
+              remember me
+            </label>
+            <a href="forgotpassword.html" class="forgotpassword"
+              >forgot password?</a
+            >
+          </div>
+          <button type="submit" id="loginBtn" class="login-Btn">Login</button>
+
+          <p class="newhere">
+            new here <a href="#" id="createAccountLink">create account</a>
+          </p>
+        </form>
+      </div>
+
+      <div id="registerForm" style="display: none">
+        <form>
+          <h1>Create Account</h1>
+          <p>Join Us Today</p>
+
+          <label for="fullname">Full Name</label>
+          <input type="text" placeholder="Your full name" />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Your email" />
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="Your password" />
+
+          <label for="confirmpassword">Confirm Password</label>
+          <input type="password" placeholder="Confirm password" />
+
+          <button type="submit" id="registerSubmitBtn">Register</button>
+
+          <p class="newhere">
+            already have an account? <a href="#" id="loginLink">login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

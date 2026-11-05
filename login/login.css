@@ -1,0 +1,158 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #d9d2f5;
+}
+
+h1 {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0 0 8px 30px;
+  margin-left: 30px;
+  color: #111827;
+  font-size: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.form-box {
+  position: relative;
+  background: #ffffff;
+  margin: 80px auto 0;
+  width: 90%;
+  max-width: 440px;
+  padding: 40px 0 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(80, 60, 160, 0.15);
+}
+
+.TopBtn {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.TopBtn button {
+  position: relative;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 12px 12px 0 0;
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  font-size: 18px;
+  font-family: "Inter", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.TopBtn button.active {
+  padding: 12px 32px 14px;
+  background-color: #ffffff;
+  color: #5200c1;
+  font-weight: 700;
+}
+
+.TopBtn button.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #5200c1;
+}
+
+input[type="email"],
+[type="text"],
+[type="password"] {
+  display: flex;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #d1d5db;
+  padding: 4px;
+  margin: 1px;
+  color: grey;
+  width: 98%;
+  min-height: 30px;
+}
+
+input::placeholder {
+  color: #9ca3af;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.forgotpassword {
+  color: rgb(17, 139, 238);
+  text-decoration: none;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.rememberSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-Btn,
+#registerSubmitBtn {
+  background-color: rgb(17, 139, 238);
+  border: 1px rgb(17, 238, 227);
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newhere {
+  text-align: center;
+}
+
+.newhere a {
+  text-decoration: none;
+  color: rgb(17, 139, 238);
+}
+
+#registerBtn {
+  display: none;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="upcoming.css" />
+    <title>Coming Soon</title>
+  </head>
+  <body>
+    <div class="line big" id="msg1">
+      This was just for practice login and register
+    </div>
+
+    <div class="line small">
+      <span id="msg2">Main page coming soon</span>
+      <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+    </div>
+
+    <a href="login.html">back to login</a>
+
+    <script>
+      function shakeLetters(el) {
+        const text = el.textContent.trim();
+        el.textContent = "";
+        for (const ch of text) {
+          const s = document.createElement("span");
+          if (ch === " ") {
+            s.className = "space";
+          } else {
+            s.textContent = ch;
+            s.style.animationDelay = Math.random() * -0.35 + "s";
+            s.style.animationDuration = 0.25 + Math.random() * 0.2 + "s";
+          }
+          el.appendChild(s);
+        }
+      }
+
+      shakeLetters(document.getElementById("msg1"));
+      shakeLetters(document.getElementById("msg2"));
+    </script>
+  </body>
+</html>
